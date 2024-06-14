@@ -3,7 +3,9 @@
 <suite name="Suite">
   <test thread-count="5" name="Test">
     <classes>
-      <class name="Maventest2.Reporting_test"/>
+      <!--<class name="Maventest2.Reporting_test"/>-->
+      <class name="Maventest2.LoginTest"/>
+      <class name="Maventest2.SearchQuoteTest"/>
     </classes>
   </test> <!-- Test -->
 </suite> <!-- Suite -->

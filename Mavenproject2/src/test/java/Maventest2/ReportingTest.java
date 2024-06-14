@@ -2,7 +2,7 @@ package Maventest2;
 
 import org.testng.annotations.Test;
 
-public class Reporting_test {
+public class ReportingTest {
 	
 	@Test
 	public void login_agent() {
