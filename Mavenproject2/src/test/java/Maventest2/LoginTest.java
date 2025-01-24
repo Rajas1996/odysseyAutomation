@@ -31,8 +31,18 @@ public class LoginTest {
 		Thread.sleep(2000);
 		
 		driver.findElement(By.xpath("//div[@class='black-layout-children']//div[2]//input[1]")).sendKeys("rajas.pitale@thinktaurus.com");
-		driver.findElement(By.xpath("(//input[@id='formBasicEmail'])[2]")).sendKeys("Rajas@123");
-		driver.findElement(By.xpath("(//button[normalize-space()='Login'])[1]")).click();
+		driver.findElement(By.xpath("/html[1]/body[1]/div[1]/div[1]/div[2]/div[1]/div[1]/div[1]/div[1]/div[1]/div[2]/div[2]/form[1]/div[2]/div[1]/input[1]")).sendKeys("Rajas@123");
+		driver.findElement(By.xpath("/html[1]/body[1]/div[1]/div[1]/div[2]/div[1]/div[1]/div[1]/div[1]/div[1]/div[2]/div[2]/form[1]/div[4]/button[1]")).click();
+		driver.findElement(By.xpath("/html[1]/body[1]/div[1]/div[1]/div[2]/div[1]/nav[1]/div[1]/div[2]/div[2]/button[1]")).click();
+		driver.findElement(By.xpath("/html[1]/body[1]/div[1]/div[1]/div[3]/div[1]/div[1]/div[2]/section[1]/div[1]/div[1]/div[2]/div[1]/div[1]/div[1]/div[1]/div[1]/div[1]")).click();
+		//driver.findElement(By.xpath("/html[1]/body[1]/div[1]/div[1]/div[3]/div[1]/div[1]/div[2]/section[1]/div[1]/div[1]/div[2]/div[1]/div[1]/div[1]/div[1]/div[1]/div[1]")).sendKeys("11515 dutch iris");
+		Thread.sleep(2000);
+		
+		String inputText = "11515 dutch iris";
+		WebElement myElement = driver.findElement(By.xpath("//*[@id=\"root\"]/div/div[3]/div/div/div[2]/section/div/div/div[2]/div/div[1]/div/div/div[1]/div[2]/div"));
+		String js1 = "arguments[0].setAttribute('value','"+inputText+"')";
+				((JavascriptExecutor) driver).executeScript(js1, myElement);
+		
 		
 		try {
 			Thread.sleep(2000);
@@ -40,7 +50,7 @@ public class LoginTest {
 			// TODO Auto-generated catch block
 			e.printStackTrace();
 		}
-		driver.close();
+		//driver.close();
 	}
 	
 }

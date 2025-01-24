@@ -8,11 +8,6 @@
           <include name="invoke"/>
         </methods>
       </class> <!-- Maventest2.LoginTest -->
-      <class name="Maventest2.SearchQuoteTest">
-        <methods>
-          <include name="quotesearch"/>
-        </methods>
-      </class> <!-- Maventest2.SearchQuoteTest -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->
