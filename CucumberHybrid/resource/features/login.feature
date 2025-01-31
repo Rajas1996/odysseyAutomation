@@ -1,3 +1,4 @@
+@smoke
 Feature: Test the login feature
 
   Scenario Outline: Verify if user is able to login successfully or not
@@ -13,3 +14,8 @@ Feature: Test the login feature
     Examples: 
       | username          | password     |
       | admin@farmers.com | Hiren@123456 |
+
+      
+      
+
+    

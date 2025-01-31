@@ -25,7 +25,7 @@ import io.cucumber.java.en.When;
 import junit.framework.Assert;
 
 public class LoginSteps {
-	static WebDriver driver;
+	 WebDriver driver;
 	
 	
 	@Given("user is on login page")
@@ -87,7 +87,7 @@ public class LoginSteps {
 	   //WebElement addressfld = driver.findElement(By.xpath("/html[1]/body[1]/div[1]/div[1]/div[3]/div[1]/div[1]/div[2]/section[1]/div[1]/div[1]/div[2]/div[1]/div[1]/div[1]/div[1]/div[1]/div[2]/div[1]/input[1]"));
 	   //addressfld.click();
 	   Thread.sleep(2000);
-	   FileInputStream fis= new FileInputStream("C:\\Users\\Taurus11\\Desktop\\MobileAppium\\Test\\resource\\testdata\\Address sample.xlsx");
+	   FileInputStream fis= new FileInputStream("C:\\Users\\Taurus11\\Desktop\\gitOdyssey\\CucumberHybrid\\resource\\testdata\\Address sample.xlsx");
 		try {
 			XSSFWorkbook workbook = new XSSFWorkbook(fis);
 			XSSFSheet sheet = workbook.getSheet("Test");
